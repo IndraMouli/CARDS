@@ -1,0 +1,95 @@
+<!-- A basic card is created with the .card class, and content inside the card has a .card-body class
+The .card-header class adds a heading to the card and the .card-footer class adds a footer to the card
+templet:
+1)IMAGE AT TOP
+- Card Container (.card)
+  - Card Image (Optional, .card-img-top / .card-img-bottom)
+  - Card Body (.card-body)
+    - Card Title (.card-title)
+    - Card Subtitle (Optional, .card-subtitle)
+    - Card Text (.card-text)
+    - Card Links (Optional, .card-link)
+2)IMAGE AT BOTTOM
+- Card Container (.card)
+  - Card Body (.card-body)
+    - Card Title (.card-title)
+    - Card Subtitle (.card-subtitle)
+    - Card Text (.card-text)
+    - Card Links (.card-link)
+  - Card Image at Bottom (.card-img-bottom)
+
+Use .card-title to add card titles to any heading element. 
+The .card-text class is used to remove bottom margins for a <p> element if it is the last child (or the only one) inside .card-body. 
+The .card-link class adds a blue color to any link, and a hover effect. 
+Add .card-img-top or .card-img-bottom to an <img> to place the image at the top or at the bottom inside the card. Note that we have added the image outside of the .card-body to span the entire width -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap-5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="d-flex">
+    <!-- image at top -->
+    <div class="container mt-3">
+        <h2>AVENGERS ASSEMBLE-2</h2>
+        <p>this is IMAGE AT TOP</p>
+        <!-- starting of card class -->
+        <div class="card bg-success" style="width:400px">
+            <img src="https://wallpapers.com/images/featured/avengers-vm16xv4a69smdauy.jpg" style="width:100%">
+            <div class="card-body">
+                <div class="card-title">
+                    <h3>SUPER HEROS</h3>
+                </div>
+                <div class="card-subtitle">
+                    <h5>AVENGERS</h5>
+                </div>
+                <div class="card-text">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum dolor, neque architecto maiores
+                        impedit consectetur omnis! Ullam vitae accusantium quasi ea accusamus dolore nobis cupiditate
+                        quae cumque laudantium, illum recusandae.</p>
+                </div>
+                <a class="btn btn-info" href="https://www.codechef.com/users/indramouli9">CODECHEF PROFILE</a>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------ -->
+    <div class="container mt-3">
+        <h2>AVENGERS ASSEMBLE-2</h2>
+        <p>this is IMAGE AT BOTTOM</p>
+        <!-- starting of card class -->
+        <div class="card bg-danger" style="width: 400px;">
+            <div class="card-body">
+                <div class="card-title">
+                    <h3>SUPER HEROS</h3>
+                </div>
+                <div class="card-subtitle">
+                    <h5>AVENGERS</h5>
+                </div>
+                <div class="card-text">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum dolor, neque architecto maiores
+                        impedit consectetur omnis! Ullam vitae accusantium quasi ea accusamus dolore nobis cupiditate
+                        quae cumque laudantium, illum recusandae.</p>
+                </div>
+                <a class="btn btn-info" href="https://www.codechef.com/users/indramouli9">CODECHEF PROFILE</a>
+            </div>
+            <div class="card" style="width:400px">
+                <img src="https://wallpapers.com/images/featured/avengers-vm16xv4a69smdauy.jpg" style="width:100%">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
